@@ -67,7 +67,10 @@ class CreatePostScreen extends ConsumerWidget {
               ),
             ),
             const HashtagMentionSuggestions(),
-            const MediaPickerSection(),
+            SafeArea(
+              top: false,
+              child: const MediaPickerSection(),
+            ),
           ],
         ),
       ),
